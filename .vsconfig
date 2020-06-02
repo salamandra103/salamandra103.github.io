@@ -1,0 +1,46 @@
+"emmet.syntaxProfiles": {
+        "javascript": "jsx",
+        "html": {
+            // "filters": "bem"
+        }
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+    },
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": "on",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "ecsstractor_port.bem_nesting": true,
+    "ecsstractor_port.add_comment": false,
+    // Prettier
+    // "prettier.tabWidth": 4,
+    // "prettier.useTabs": true,
+    // "prettier.semi": true,
+    // "prettier.printWidth": 1000,
+    // "prettier.jsxSingleQuote": true,
+    // "prettier.jsxBracketSameLine": true,
+    // Vetur
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.options.useTabs": true,
+    "eslint.format.enable": true,
+    "typescript.reportStyleChecksAsWarnings": false,
+    "typescript.validate.enable": false,
+    "window.zoomLevel": -1,
