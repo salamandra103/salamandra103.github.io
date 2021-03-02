@@ -47,6 +47,7 @@ gulp.task("sass", function () {
 
 	var sassSettings = {
 		outputStyle: "compressed",
+		includePaths: ['node_modules']
 	};
 
 	return gulp
@@ -105,22 +106,28 @@ gulp.task("pug", function () {
 });
 
 gulp.task("js", function () {
-	var bundler = browserify("./app/js/script.js", { debug: true }).transform(
-		babelify.configure({
-			presets: ["@babel/preset-env"],
-			sourceMaps: true,
-		})
-	);
+	// var bundler = browserify("./app/js/script.js").transform(
+	// 	babelify.configure({
+	// 		presets: ["@babel/preset-env"],
+	// 		sourceMaps: true,
+	// 	})
+	// );
 
-	return bundler
-		.bundle()
-		.pipe(source("script.min.js"))
-		.pipe(buffer())
-		.pipe(sourcemaps.init({ loadMaps: true }))
-		.pipe(uglify())
-		.pipe(sourcemaps.write("./"))
-		.pipe(gulp.dest("dist/js"))
-		.on("end", browserSync.reload);
+	// return bundler
+	// 	.bundle()
+	// 	.pipe(source("script.min.js"))
+	// 	.pipe(buffer())
+	// 	// .pipe(sourcemaps.init({ loadMaps: true }))
+	// 	// .pipe(uglify())
+	// 	// .pipe(sourcemaps.write("./"))
+	// 	.pipe(gulp.dest("dist/js"))
+	// 	.on("end", browserSync.reload);
+
+	return gulp.src(['app/js/**/*.js'])
+        .pipe(concat('script.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
+
 });
 
 gulp.task("images", function () {
