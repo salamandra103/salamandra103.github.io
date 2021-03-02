@@ -5907,40 +5907,40 @@ img {
 
 @font-face {
   font-family: SFProDisplay;
-  src: url("../images/../../fonts/SFProDisplay-Thin/SFProDisplay-Thin.eot");
-  src: url("../images/../../fonts/SFProDisplay-Thin/SFProDisplay-Thin.eot?#iefix") format("embedded-opentype"),url("../images/../../fonts/SFProDisplay-Thin/SFProDisplay-Thin.woff") format("woff"),url("../images/../../fonts/SFProDisplay-Thin/SFProDisplay-Thin.ttf") format("truetype");
+  src: url("./../fonts/SFProDisplay-Thin/SFProDisplay-Thin.eot");
+  src: url("./../fonts/SFProDisplay-Thin/SFProDisplay-Thin.eot?#iefix") format("embedded-opentype"),url("./../fonts/SFProDisplay-Thin/SFProDisplay-Thin.woff") format("woff"),url("./../fonts/SFProDisplay-Thin/SFProDisplay-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: SFProDisplay;
-  src: url("../images/../../fonts/SFProDisplay-Light/SFProDisplay-Light.eot");
-  src: url("../images/../../fonts/SFProDisplay-Light/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"),url("../images/../../fonts/SFProDisplay-Light/SFProDisplay-Light.woff") format("woff"),url("../images/../../fonts/SFProDisplay-Light/SFProDisplay-Light.ttf") format("truetype");
+  src: url("./../fonts/SFProDisplay-Light/SFProDisplay-Light.eot");
+  src: url("./../fonts/SFProDisplay-Light/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"),url("./../fonts/SFProDisplay-Light/SFProDisplay-Light.woff") format("woff"),url("./../fonts/SFProDisplay-Light/SFProDisplay-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: SFProDisplay;
-  src: url("../images/../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot");
-  src: url("../images/../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),url("../images/../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"),url("../images/../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("truetype");
+  src: url("./../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot");
+  src: url("./../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),url("./../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"),url("./../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: SFProDisplay;
-  src: url("../images/../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot");
-  src: url("../images/../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"),url("../images/../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff") format("woff"),url("../images/../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf") format("truetype");
+  src: url("./../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot");
+  src: url("./../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"),url("./../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff") format("woff"),url("./../fonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: SFProDisplay;
-  src: url("../images/../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot");
-  src: url("../images/../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"),url("../images/../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff") format("woff"),url("../images/../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format("truetype");
+  src: url("./../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot");
+  src: url("./../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"),url("./../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff") format("woff"),url("./../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -6075,7 +6075,7 @@ img {
 
 .header__phone ul {
   padding-left: 35px;
-  background-image: url("../images/../../images/phone.svg");
+  background-image: url("./../images/phone.svg");
   background-size: 20px;
   background-position: 0;
   background-repeat: no-repeat;
@@ -6201,15 +6201,15 @@ img {
 }
 
 .info__contacts-phone:before {
-  background-image: url("../images/phone-icon.svg");
+  background-image: url("./../images/phone-icon.svg");
 }
 
 .info__contacts-email:before {
-  background-image: url("../images/email-icon.svg");
+  background-image: url("./../images/email-icon.svg");
 }
 
 .main {
-  background-image: url("../images/main-background.png");
+  background-image: url("./../images/main-background.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;

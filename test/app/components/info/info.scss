@@ -75,13 +75,13 @@
 
         &-phone {
             &:before {
-                background-image: url('phone-icon.svg');
+                background-image: url('../images/phone-icon.svg');
             }
         }
 
         &-email {
             &:before {
-                background-image: url('email-icon.svg');
+                background-image: url('../images/email-icon.svg');
             }
         }
     }

@@ -12,6 +12,8 @@ const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
 const uglify = require("gulp-uglify-es").default;
 const urlAdjuster = require('gulp-css-url-adjuster');
+const cssAdjustUrlPath = require('gulp-css-adjust-url-path');
+const replace = require('gulp-replace');
 
 // PostCSS
 const postcss = require("gulp-postcss");
@@ -55,8 +57,9 @@ gulp.task("sass", function () {
 		.pipe(postcss(postcssPlugins))
 		// .pipe(sourcemaps.write("."))
 		.pipe(urlAdjuster({
-			prepend: '../images/',
+			prepend: './',
 		}))
+		// .pipe(cssAdjustUrlPath(/(url\(['"]?)[/]?(assets)/g))
 		.pipe(gulp.dest("dist/css"))
 		.on("end", browserSync.reload);
 });
@@ -130,6 +133,7 @@ gulp.task("images", function () {
 gulp.task("fonts", function () {
 	return gulp
 		.src("app/fonts/**/*.+(eot|woff|ttf|woff2)")
+		// .pipe(replace('../../fonts/', '/fonts/'))
 		.pipe(gulp.dest("dist/fonts"))
 		.on("end", browserSync.reload);
 });
