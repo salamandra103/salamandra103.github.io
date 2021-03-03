@@ -12,59 +12,54 @@
 <body>
 	<header class="header">
 		<div class="header__container container">
-			<div class="header__wrapper row align-items-center">
-				<div class="col-2">
-					<div class="header__logo">
-						<a href="#">
-							<img src="images/logo.svg" alt="">
-						</a>
-					</div>
+			<div class="header__wrapper align-items-center">
+				<div class="header__burger js-header__burger"></div>
+				<div class="header__logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="">
+					</a>
 				</div>
-				<div class="col-7">
-					<nav class="header__nav">
-						<ul class="header__nav-list">
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link">Головна</a>
-							</li>
-							<li class="header__nav-item header__nav-item_dropdown">
-								<span href="#" class="header__nav-link">Послуги</span>
-								<ul class="header__nested-list">
-									<li class="header__nested-item">
-										<a href="#" class="header__nested-link">Ссылdasdsadка 1</a>
-									</li>
-									<li class="header__nested-item">
-										<a href="#" class="header__nested-link">Ссdsadasd dsadsa dsылка 2</a>
-									</li>
-								</ul>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link">Законодавство</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link">Контакти</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#" class="header__nav-link">Партнери</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-3">
-					<div class="header__info">
-						<div class="header__lang">
-							<select name="" id="" class="select js-select">
-								<option value="UA" selected>UA</option>
-								<option value="RU">RU</option>
-								<option value="US">US</option>
-							</select>
-
-						</div>
-						<div class="header__phone">
-							<ul>
-								<li><a href="#">+38 (050) 463 77 00</a></li>
-								<li><a href="#">+38 (050) 345 07 00</a></li>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link">Головна</a>
+						</li>
+						<li class="header__nav-item header__nav-item_dropdown">
+							<span href="#" class="header__nav-link">Послуги</span>
+							<ul class="header__nested-list">
+								<li class="header__nested-item">
+									<a href="#" class="header__nested-link">Ссылdasdsadка 1</a>
+								</li>
+								<li class="header__nested-item">
+									<a href="#" class="header__nested-link">Ссdsadasd dsadsa dsылка 2</a>
+								</li>
 							</ul>
-						</div>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link">Законодавство</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link">Контакти</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link">Партнери</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__info">
+					<div class="header__lang">
+						<select name="" id="" class="select js-select">
+							<option value="UA" selected>UA</option>
+							<option value="RU">RU</option>
+							<option value="US">US</option>
+						</select>
+
+					</div>
+					<div class="header__phone">
+						<ul>
+							<li><a href="#">+38 (050) 463 77 00</a></li>
+							<li><a href="#">+38 (050) 345 07 00</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -102,7 +97,7 @@
 								<p class="caption caption_sub">У той час якийсь безіменний друкар створив</p>
 							</div>
 							<div class="services__grid row">
-								<div class="col-6">
+								<div class="col-sm-6">
 									<div class="services__block" style="background-image: url('images/service-1.png');">
 										<img src="images/document-icon.svg" alt="">
 										<p class="services__block-text">
@@ -111,7 +106,7 @@
 										<a href="#" class="services__block-button">Замовити зараз!</a>
 									</div>
 								</div>
-								<div class="col-6">
+								<div class="col-sm-6">
 									<div class="services__block" style="background-image: url('images/service-2.png');">
 										<img src="images/shield-icon.svg" alt="">
 										<p class="services__block-text">
@@ -129,7 +124,7 @@
 			<section class="info">
 				<div class="info__container container">
 					<div class="info__wrapper row">
-						<div class="col-7">
+						<div class="col-sm-7 col-12">
 							<div class="info__left">
 								<h4 class="caption">Допомога в оформленні</h4>
 								<p class="caption caption_sub">Вам оперативно дадуть відповідь, проконсультують і допоможуть оформити документи:</p>
@@ -153,7 +148,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-5">
+						<div class="col-sm-5">
 							<div class="info__right">
 								<img src="images/info-background.png" alt="">
 							</div>
@@ -168,7 +163,7 @@
 							<p class="caption caption_sub">У той час якийсь безіменний друкар створив<p>
 						</div>
 						<div class="clients__blocks row">
-							<div class="col-4">
+							<div class="col-sm-4 col-12">
 								<div class="clients__block">
 									<div class="clients__image">
 										<img src="images//clients/1.svg" alt="">
@@ -176,7 +171,7 @@
 									<span class="clients__title">УкрАвтодор</span>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4 col-12">
 								<div class="clients__block">
 									<div class="clients__image">
 										<img src="images//clients/2.svg" alt="">
@@ -184,7 +179,7 @@
 									<span class="clients__title">Національна поліція</span>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4 col-12">
 								<div class="clients__block">
 									<div class="clients__image">
 										<img src="images//clients/3.svg" alt="">
@@ -192,7 +187,7 @@
 									<span class="clients__title">Укрзалізниця</span>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4 col-12">
 								<div class="clients__block">
 									<div class="clients__image">
 										<img src="images//clients/4.svg" alt="">
@@ -200,7 +195,7 @@
 									<span class="clients__title">Місцеві ради</span>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-sm-4 col-12">
 								<div class="clients__block">
 									<div class="clients__image">
 										<img src="images//clients/5.svg" alt="">
@@ -220,13 +215,13 @@
 							<p class="caption caption_sub">У той час якийсь безіменний друкар створив<p>
 						</div>
 						<div class="row align-items-center">
-							<div class="col-7">
+							<div class="col-sm-7 col-12">
 								<p class="about__text">
 									Сайт рибатекст допоможе дизайнеру, верстальщику, вебмайстру згенерувати кілька абзаців більш менш осмисленого тексту риби російською мовою, а початківцю оратору відточити навик публічних виступів в домашніх умовах. При створенні генератора ми використовували небезизвестного універсальний код промов. Текст генерується абзацами випадковим чином від двох до десяти пропозицій в абзаці, що дозволяє зробити текст більш привабливим і живим для візуально-слухового сприйняття.
 
 								</p>
 							</div>
-							<div class="col-5">
+							<div class="col-sm-5 col-12">
 								<img src="images/about.png" class="about__image" />
 							</div>
 						</div>
@@ -239,7 +234,7 @@
 	<footer class="footer">
 		<div class="footer__top">
 			<div class="container">
-				<div class="footer__wrapper row">
+				<div class="footer__wrapper">
 					<div class="footer__contacts">
 						<div class="footer__contacts-container">
 							<h4>Контакти</h4>
@@ -296,59 +291,53 @@
 
 		<div class="footer__bottom">
 			<div class="container">
-				<div class="footer__wrapper row align-items-center">
-					<div class="col-2">
-						<div class="footer__logo">
-							<a href="#">
-								<img src="images/logo-white.svg" alt="">
-							</a>
-						</div>
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<a href="#">
+							<img src="images/logo-white.svg" alt="">
+						</a>
 					</div>
-					<div class="col-7">
-						<nav class="footer__nav">
-							<ul class="footer__nav-list">
-								<li class="footer__nav-item">
-									<a href="#" class="footer__nav-link">Головна</a>
-								</li>
-								<li class="footer__nav-item footer__nav-item_dropdown">
-									<span href="#" class="footer__nav-link">Послуги</span>
-									<ul class="footer__nested-list">
-										<li class="footer__nested-item">
-											<a href="#" class="footer__nested-link">Ссылdasdsadка 1</a>
-										</li>
-										<li class="footer__nested-item">
-											<a href="#" class="footer__nested-link">Ссdsadasd dsadsa dsылка 2</a>
-										</li>
-									</ul>
-								</li>
-								<li class="footer__nav-item">
-									<a href="#" class="footer__nav-link">Законодавство</a>
-								</li>
-								<li class="footer__nav-item">
-									<a href="#" class="footer__nav-link">Контакти</a>
-								</li>
-								<li class="footer__nav-item">
-									<a href="#" class="footer__nav-link">Партнери</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-3">
-						<div class="footer__info">
-							<div class="header__lang">
-								<select name="" id="" class="select js-select">
-									<option value="UA" selected>UA</option>
-									<option value="RU">RU</option>
-									<option value="US">US</option>
-								</select>
-							</div>
-
-							<div class="footer__phone">
-								<ul>
-									<li><a href="#">+38 (050) 463 77 00</a></li>
-									<li><a href="#">+38 (050) 345 07 00</a></li>
+					<nav class="footer__nav">
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Головна</a>
+							</li>
+							<li class="footer__nav-item footer__nav-item_dropdown">
+								<span href="#" class="footer__nav-link">Послуги</span>
+								<ul class="footer__nested-list">
+									<li class="footer__nested-item">
+										<a href="#" class="footer__nested-link">Ссылdasdsadка 1</a>
+									</li>
+									<li class="footer__nested-item">
+										<a href="#" class="footer__nested-link">Ссdsadasd dsadsa dsылка 2</a>
+									</li>
 								</ul>
-							</div>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Законодавство</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Контакти</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="#" class="footer__nav-link">Партнери</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__info">
+						<div class="footer__lang">
+							<select name="" id="" class="select js-select">
+								<option value="UA" selected>UA</option>
+								<option value="RU">RU</option>
+								<option value="US">US</option>
+							</select>
+						</div>
+
+						<div class="footer__phone">
+							<ul>
+								<li><a href="#">+38 (050) 463 77 00</a></li>
+								<li><a href="#">+38 (050) 345 07 00</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
