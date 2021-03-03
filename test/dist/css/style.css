@@ -7210,10 +7210,27 @@ img {
   background-image: url("./../images/main-background.png");
   background-size: cover;
   background-position: bottom;
-  background-repeat: no-repeat;
   padding-top: 163px;
-  padding-bottom: 200px;
-  margin-bottom: 142px;
+  padding-bottom: 245px;
+  margin-bottom: 96px;
+  position: relative;
+}
+
+.main,
+.main:before {
+  background-repeat: no-repeat;
+}
+
+.main:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./../images/document.png");
+  background-position: calc(50% + 412px) bottom;
+  background-size: 396px 497px;
+  content: "";
 }
 
 .main__wrapper {
@@ -7309,6 +7326,11 @@ img {
     padding-bottom: 227px;
     margin-bottom: 98px;
     background-image: url("./../images/main-background-mob.png");
+  }
+
+  .main:before {
+    background-position: 62% 100%;
+    background-size: 178px;
   }
 
   .main__descr {
