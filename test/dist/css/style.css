@@ -5894,7 +5894,7 @@ img {
 
 @media (max-width:769px) {
   .page__wrapper section:first-child {
-    padding-top: 100px;
+    padding-top: 82px;
   }
 }
 
@@ -5917,7 +5917,7 @@ img {
 }
 
 .caption_sub {
-  color: #d6d6d6;
+  color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
@@ -7133,6 +7133,7 @@ img {
 
 .header__logo {
   margin-right: 99px;
+  margin-bottom: -25px;
 }
 
 .header__nav {
@@ -7520,10 +7521,12 @@ img {
   .header__wrapper {
     padding-top: 15px;
     padding-bottom: 12px;
+    min-height: 66px;
   }
 
   .header__logo {
     margin-right: 0;
+    display: none;
   }
 }
 
@@ -7811,17 +7814,37 @@ img {
   z-index: 0;
 }
 
+.main__logo {
+  padding: 0;
+}
+
+.main__bottom,
+.main__logo {
+  display: none;
+}
+
 @media (max-width:560px) {
   .main {
     padding-top: 105px;
     padding-bottom: 227px;
-    margin-bottom: 98px;
+    margin-bottom: 38px;
     background-image: url("./../images/main-background-mob.png");
+  }
+
+  .main__bottom {
+    display: block;
   }
 
   .main:before {
     background-position: 62% 100%;
     background-size: 178px;
+  }
+
+  .main__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .main__descr {
@@ -7843,11 +7866,20 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .main__container .main__buttons {
+    display: none;
   }
 
   .main__button {
     margin: 0 0 18px;
     max-width: 290px;
+    background-color: transparent;
+    border: 2px solid #111936;
   }
 
   .main__button:last-of-type {
@@ -7855,7 +7887,17 @@ img {
   }
 
   .main__cars {
-    bottom: -283px;
+    position: static;
+  }
+
+  .main__container .main__cars {
+    display: none;
+  }
+
+  .main__logo {
+    display: block;
+    max-width: 95px;
+    margin: 0 auto 10px;
   }
 }
 
@@ -7970,6 +8012,7 @@ div[class^=col-]:nth-child(2n) .services__block:before {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+    padding: 18px 18px 25px;
   }
 
   .services__block img {
